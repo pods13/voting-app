@@ -1,11 +1,11 @@
 class ProductList extends React.Component {
 
 	render() {
-		const product = Seed.products[0];
-		return (
-			<div className='ui unstackable items'>
+		const products = Seed.products.sort((a, b) => b.votes - a.votes);
+		const productComponents = products.map(product => {
+			return (
 				<Product
-					id={product.id}
+					key={'product-' + product.id}
 					title={product.title}
 					description={product.description}
 					url={product.url}
@@ -13,6 +13,11 @@ class ProductList extends React.Component {
 					submitterAvatarUrl={product.submitterAvatarUrl}
 					votes={product.votes}
 				/>
+			);
+		});
+		return (
+			<div className='ui unstackable items'>
+				{productComponents}
 			</div>
 		);
 	}
