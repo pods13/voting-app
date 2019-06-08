@@ -5,7 +5,7 @@
   "homepage": "https://pods13.github.io/voting-app/",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=1234 --open=public --entry-file=index.html",
+    "start": "cd public &&live-server --entry-file=index.html",
     "deploy": "gh-pages -d public"
   },
   "repository": {
