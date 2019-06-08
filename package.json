@@ -5,7 +5,7 @@
   "homepage": "https://pods13.github.io/voting-app/",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages"
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
