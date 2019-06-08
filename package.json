@@ -1,0 +1,23 @@
+{
+  "name": "voting-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://pods13.github.io/voting-app/",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pods13/voting-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pods13/voting-app/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
